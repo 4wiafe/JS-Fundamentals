@@ -1,9 +1,9 @@
-function checkArgs(arg1, arg2, arg3) {
-  if (arg1 || arg2 || arg3) {
-    console.log("Argument found");
-  } else if (!(arg1 && arg2 && arg3)) {
-    console.log("No argument");
-  } else {
-    console.log("Argument found");
-  }
+const args = process.argv.slice(2);
+
+if (args === 0) {
+  console.log("No argument");
+} else if (args === 1) {
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
 }
