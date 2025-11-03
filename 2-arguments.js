@@ -8,6 +8,6 @@ function checkArgs(arg1, arg2, arg3) {
   }
 }
 
-checkArgs();
-checkArgs(1);
 checkArgs(1, 2, 3);
+checkArgs(1);
+checkArgs();
